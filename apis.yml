@@ -1,7 +1,27 @@
 aid: balance-re
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/balance-re.png
 name: Balance Re
-description: Balance Re is a company surfaced as a portfolio company of anthemis and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Balance Re is a fully licensed German life reinsurance company headquartered
+  in Cologne, with an office in London, offering asset-liability management (ALM) reinsurance
+  solutions to life insurers and pension funds. Its proprietary technology delivers
+  real-time analytics that help clients manage capital and liquidity, price and transfer
+  longevity, savings and retirement risk, and improve competitiveness through quantitative
+  asset-liability management. Balance Re raised a $10M Series A in 2021 led by Anthemis
+  Group, with participation from Global Brain, Roland Berger Industries and Talabot
+  Finance. Added to the API Evangelist network as a portfolio-company lead; the company
+  publishes a corporate marketing site but no public developer API, documentation, or
+  machine-readable specifications as of this enrichment pass.
 url: https://raw.githubusercontent.com/api-evangelist/balance-re/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +31,36 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Reinsurance
+- Insurance
+- Insurtech
+- Life Insurance
+- Asset-Liability Management
+- Pension
+- Fintech
+- Germany
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: DomainSecurity
+  url: security/balance-re-domain-security.yml
+- type: Website
+  url: https://balance.re
+- type: PrivacyPolicy
+  url: https://balance.re/#point2
+- type: TermsOfService
+  url: https://balance.re/#point3
+- type: LinkedIn
+  url: https://www.linkedin.com/company/balance-re
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
